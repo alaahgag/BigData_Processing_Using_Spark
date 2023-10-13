@@ -15,15 +15,15 @@
 
 ## Introduction:
 
-In our fast-paced world, air travel has become an indispensable part of modern life. However, flight delays can disrupt travel plans and create challenges for passengers, airlines, and airports alike. Understanding the causes and patterns of flight delays is key to enhancing the overall air travel experience and identifying areas for improvement.
+In today's fast-paced world, air travel has become an indispensable part of modern life. However, flight delays can disrupt travel plans and create challenges for passengers, airlines, and airports alike. Understanding the causes and patterns of flight delays is key to enhancing the overall air travel experience and identifying areas for improvement.
 
 ## Objective:
 
-The objective of this project is to perform a comprehensive Data Analysis using a vast dataset of flight information. Our primary focus is to gain insights into flight delay patterns, ultimately shedding light on the dynamics of air travel.
+The objective of this project is to perform a comprehensive Data Analysis using a vast dataset of flight information. My primary focus is to gain insights into flight delay patterns, ultimately shedding light on the dynamics of air travel.
 
 ## About the Dataset:
 
-Our dataset spans from 2018 to 2023-04, containing extensive information regarding scheduled and actual arrival and departure times, with a specific emphasis on delays rather than cancellations or diversions. This dataset comprises a staggering 30,132,672 records, underlining the sheer volume of data we are dealing with.
+The dataset spans from 2018 to 2023-04, containing extensive information regarding scheduled and actual arrival and departure times, with a specific emphasis on delays rather than cancellations or diversions. This dataset comprises a staggering 30,132,672 records, underlining the sheer volume of data I am dealing with.
 
 You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/arvindnagaonkar/flight-delay/).
 
@@ -31,7 +31,7 @@ You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/arvi
 
 ### 1. Importing Libraries and Spark Setup:
 
-We kickstart our project by importing essential libraries and configuring the Spark session. Given the limitations of my local machine (8GB RAM, 4 cores), we're running the code locally. Our configuration includes:
+I kickstart my project by importing essential libraries and configuring the Spark session. Given the limitations of my local machine (8GB RAM, 4 cores), I'm running the code locally. My configuration includes:
 
 - Setting executor memory to 5GB.
 - Configuring executor cores to 3.
@@ -42,22 +42,22 @@ We kickstart our project by importing essential libraries and configuring the Sp
 
 ### 2. Loading the Dataset:
 
-The dataset is loaded into a DataFrame. However, due to the limitations of local resources, we extract a sample from it using a fraction ratio of 0.001, resulting in approximately 30,000 records. The bulk of the data transformations are completed locally, with the possibility of shifting to a cloud-based solution for processing the full dataset.
+The dataset is loaded into a DataFrame. However, due to the limitations of local resources, I extract a sample from it using a fraction ratio of 0.001, resulting in approximately 30,000 records. The bulk of the data transformations are completed locally, with the possibility of shifting to a cloud-based solution for processing the full dataset.
 
 ### 3. Understanding the Data:
 
-To gain insights, we begin with a schema presentation of the data, highlighting the number of null values and duplicates. A description of the DataFrame provides details on data types for each column, ensuring data consistency.
+To gain insights, I begin with a schema presentation of the data, highlighting the number of null values and duplicates. A description of the DataFrame provides details on data types for each column, ensuring data consistency.
 
 ### 4. Optimization:
 
-- **Data Sampling**: Given resource constraints, we extract a sample of the dataset using a fraction ratio.
+- **Data Sampling**: Given resource constraints, I extract a sample of the dataset using a fraction ratio.
 - **Data Partitioning**: To enhance parallel processing, the number of partitions is increased from 6 to 10.
 - **Caching**: After numerous data transformations, the final DataFrame is cached to improve processing efficiency.
 - **Memory Management**: Driver and executor memory are specified to optimize resource utilization.
 
 ### 5. Data Preprocessing:
 
-We undertake several data preprocessing steps:
+I undertake several data preprocessing steps:
 
 - Converting the "Flight_Date" from a string type to a date type.
 - Creating a new column, "TotalDelay," to compute the total delay for each flight by summing "DepDelay" and "ArrDelay."
@@ -66,7 +66,7 @@ We undertake several data preprocessing steps:
 
 ### 6. Dataset Analysis:
 
-Our analysis focuses on addressing key questions based on the dataset:
+My analysis focuses on addressing key questions based on the dataset:
 
 - What is the average delay time for each airline?
 - Which are the top 10 airlines with the most delay time?
@@ -78,9 +78,9 @@ Our analysis focuses on addressing key questions based on the dataset:
 
 ## Project Presentation:
 
-I have created a detailed presentation that provides an overview of my project, key findings, and visual insights. You can access the project presentation[here](https://github.com/alaahgag/BigData_Processing_Using_Spark/blob/main/FlightDelayAnalysis.pptx).
+I have created a detailed presentation that provides an overview of my project, key findings, and visual insights. You can access the project presentation [here](https://github.com/alaahgag/BigData_Processing_Using_Spark/blob/main/FlightDelayAnalysis.pptx).
 
-The presentation complements the documentation and provides a visual representation of our analysis and its results. We encourage you to explore it for a more immersive understanding of our project.
+The presentation complements the documentation and provides a visual representation of my analysis and its results. I encourage you to explore it for a more immersive understanding of my project.
 
 ## How to Run the Code:
 
