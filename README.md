@@ -76,7 +76,11 @@ Our analysis focuses on addressing key questions based on the dataset:
 - What is the average delay time by day of the week?
 - What is the average delay time by month?
 
-This documentation highlights our approach and methodologies for a comprehensive Flight Delay Analysis, providing valuable insights into the world of air travel.
+## Project Presentation:
+
+I have created a detailed presentation that provides an overview of my project, key findings, and visual insights. You can access the project presentation[here]([insert_link_to_presentation_here](https://github.com/alaahgag/BigData_Processing_Using_Spark/blob/main/FlightDelayAnalysis.pptx))
+
+The presentation complements the documentation and provides a visual representation of our analysis and its results. We encourage you to explore it for a more immersive understanding of our project.
 
 ## How to Run the Code:
 
